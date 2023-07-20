@@ -19,17 +19,16 @@ import (
  */
 
 func compareTriplets(a []int32, b []int32) []int32 {
-	var ar, br int32
+	var scoreA, scoreB int32
 	for i := 0; i < len(a); i++ {
-		switch {
-		case a[i] < b[i]:
-			br++
-		case a[i] > b[i]:
-			ar++
+		if a[i] > b[i] {
+			scoreA++
+		} else if a[i] < b[i] {
+			scoreB++
 		}
 	}
 
-	return []int32{ar, br}
+	return []int32{scoreA, scoreB}
 }
 
 func main() {
