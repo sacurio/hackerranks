@@ -1,1 +1,1 @@
-# hackerranks
+# Hacker Ranks - Golang Challenges
