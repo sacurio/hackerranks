@@ -7,7 +7,7 @@ import (
 func main() {
 	fmt.Println(fibonacci(15))
 	fmt.Println(fibonacciRecursive(15))
-	fmt.Println(fibonacciRecursive(15))
+	fmt.Println(fibonacciConcurrent(15))
 }
 
 func fibonacci(n int) []int {
