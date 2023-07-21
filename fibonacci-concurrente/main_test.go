@@ -13,3 +13,9 @@ func BenchmarkFibonacciRecursive(b *testing.B) {
 		fibonacciRecursive(20)
 	}
 }
+
+func BenchmarkFibonacciConcurrent(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		fibonacciConcurrent(20)
+	}
+}

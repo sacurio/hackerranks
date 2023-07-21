@@ -1,0 +1,21 @@
+goos: linux
+goarch: amd64
+pkg: github.com/sacurio/hackerranks/fibonacci-concurrente
+cpu: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+BenchmarkFibonacci-8             	23458723	        55.99 ns/op
+BenchmarkFibonacci-8             	22461814	        53.43 ns/op
+BenchmarkFibonacci-8             	22131511	        51.63 ns/op
+BenchmarkFibonacci-8             	23214448	        51.85 ns/op
+BenchmarkFibonacci-8             	22756117	        51.91 ns/op
+BenchmarkFibonacciRecursive-8    	   41182	     44174 ns/op
+BenchmarkFibonacciRecursive-8    	   24483	     50086 ns/op
+BenchmarkFibonacciRecursive-8    	   24392	     48957 ns/op
+BenchmarkFibonacciRecursive-8    	   24703	     47602 ns/op
+BenchmarkFibonacciRecursive-8    	   25081	     47819 ns/op
+BenchmarkFibonacciConcurrent-8   	      98	  10821923 ns/op
+BenchmarkFibonacciConcurrent-8   	      98	  15377668 ns/op
+BenchmarkFibonacciConcurrent-8   	      80	  14932124 ns/op
+BenchmarkFibonacciConcurrent-8   	     100	  15209111 ns/op
+BenchmarkFibonacciConcurrent-8   	      78	  15598723 ns/op
+PASS
+ok  	github.com/sacurio/hackerranks/fibonacci-concurrente	21.804s
